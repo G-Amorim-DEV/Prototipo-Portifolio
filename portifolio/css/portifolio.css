@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#cabecalho {
+    background-color: bisque;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 0px 100px;
+}
+
+#logo {
+    background-color: blueviolet;
+    height: 100px;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+#menu_principal {
+    background-color: brown;
+    height: 100px;
+    display: grid;
+    place-items: center end;
+}
+
+#itens_menu {
+    background-color: blue;
+    height: 40px;
+    width: 60%;
+    display: grid;
+    place-items: center;
+}
+
+
+#quem_sou {
+    background-color: beige;
+    height: 87vh;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 10px;
+}
+
+#informacoes_texto {
+    background-color: cadetblue;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+    gap: 10px 0;
+}
+
+#titulo_informacoes {
+    background-color: rgb(237, 15, 15);;
+    display: grid;
+    place-items: center;
+}
+
+#botao_informacoes {
+    background-color: rgb(232, 66, 66);
+    display: grid;
+    place-items: center;
+}
+
+#redes_sociais_informacoes {
+    background-color: rgb(245, 117, 117);
+    display: grid;
+    place-items: center;
+}
+
+#social {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    gap: 10px;
+    place-items: center;
+}
+
+.redes_sociais {
+    background-color: crimson;
+    height: 50px;
+    width: 50px;
+}
+
+
+#foto {
+    background-color: cornflowerblue;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+}
+
+#picture {
+    background-color: darkorchid;
+   
+    width: 99%;
+    height: 99%;
+    display: grid;
+    place-items: center;
+}
+
+
+#corpo_sobre {
+    background-color: rgb(223, 214, 179);
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+#titulo_sobre {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+
+}
+
+#sobre {
+    background-color: blueviolet;
+    height: 100px;
+    width: 400px;
+   
+    
+}
+
+#secao_sobre {
+    background-color: crimson;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+#foto_sobre {
+    background-color: cornflowerblue;
+
+    display: grid;
+    place-items: center;
+   
+    
+}
+
+#descricao_sobre {
+    background-color: rgb(89, 123, 186);
+    display: grid;
+    place-items: center;
+}
+
+#imagem_sobre{
+    background-color: blueviolet;
+    height: 90%;
+    width: 90%;
+}
+
+#texto_sobre{
+     background-color: rgb(220, 107, 212);
+    height: 60%;
+    width: 90%;
+}
