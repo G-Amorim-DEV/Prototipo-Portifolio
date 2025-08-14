@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Text:ital@0;1&family=Nova+Square&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Text:ital@0;1&family=Nova+Square&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root{ /* Criação de variaveis */
 
     /* Cores */
@@ -13,7 +15,10 @@
 
     /* Fonte Menu Princípal */
     --fonte_menu_principal: "Chakra Petch", sans-serif;
- 
+
+    /* Fonte titulo informações */
+    --fonte_titulo_informacoes: "Nova Square", sans-serif;
+    --fonte_tamanho_titulo_informacoes: 3rem
 
 
 }
@@ -30,6 +35,7 @@
 #cabecalho {
 
     background-color: rgb(135, 121, 136);
+    
    
         /* width style color */
     border-bottom: 2px solid rgba(0, 0, 0, 0.233);
@@ -135,70 +141,109 @@ cursor: pointer;
 
 }
 
+        /* Pseudoclasse */
+#quem_sou:hover{
+    background: radial-gradient(var(--cor_primaria),rgb(12, 63, 12));
+}
+
 #quem_sou {
-    background-color: beige;
+    transition: 2s;
+    
+    /* background-image: url(/portifolio/midias/img/Capa.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: certer; */
+
+    /* Plano de fundo com gradiente linear - (ângulo, cor, cor) */
+    /* background: linear-gradient(45deg, rgb(29, 158, 29), var(--cor_primaria)); */
+
+    /* Plano de fundo com gradiente radial - (cor, cor, cor, n-cor) */
+    background: radial-gradient(rgb(12, 63, 12), var(--cor_primaria));
+    /*Efeito parallax - Imagem parada na rolagem  */
+    background-attachment: fixed;
+
+
     height: 87vh;
     padding: 10px;
-    display: none;
+
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px 10px;
+    place-items: center;
 }
 
 #informacoes_texto {
-    background-color: cadetblue;
-    padding: 10px;
+    
     display: grid;
+    grid-template-columns: 0.7fr;
     grid-template-rows: 3fr 1fr 1fr;
     gap: 10px 0;
+
 }
 
 #titulo_informacoes {
-    background-color: rgb(237, 15, 15);;
+   
     display: grid;
-    place-items: center;
+    font-family: var(--fonte_titulo_informacoes);
+    font-size: var(--fonte_tamanho_titulo_informacoes);
+    color: aliceblue;
 }
 
-#botao_informacoes {
-    background-color: rgb(232, 66, 66);
-    display: grid;
-    place-items: center;
+
+
+button:hover{
+     background: linear-gradient(45deg, var(--cor_primaria), rgb(29, 158, 29));
 }
 
-#redes_sociais_informacoes {
-    background-color: rgb(245, 117, 117);
-    display: grid;
-    place-items: center;
+button{
+    font-size: 1rem;
+    font-weight: bold;
+   
+    margin: 20px 0px;
+
+    padding:20px 100px;
+    border-radius: 15px;
+    box-shadow: rgba(0,0,0,.5);
+    cursor: pointer;
+
+    background: linear-gradient(45deg, rgb(29, 158, 29), var(--cor_primaria));
+    color: aliceblue;
 }
+
 
 #social {
     display: grid;
     grid-template-columns: 50px 50px 50px;
     gap: 10px;
-    place-items: center;
-}
-
-.redes_sociais {
-    background-color: crimson;
-    height: 50px;
-    width: 50px;
+  
 }
 
 
 #foto {
-    background-color: cornflowerblue;
+    
     padding: 10px;
     display: grid;
     place-items: center;
+    color: aliceblue;
+
+
 }
 
-#picture {
-    background-color: darkorchid;
-   
-    width: 99%;
-    height: 99%;
-    display: grid;
-    place-items: center;
+#foto_apresentacao{
+    border-radius: 15px;
 }
+
+
+#foto figure img{
+    border-radius: 500px;
+    box-shadow: rgba(0,0,0,1);
+}
+
+.redes_sociais:hover {
+    background: linear-gradient(90deg, #8e2de2, #4a00e0); /* Roxo vibrante para azul profundo */
+}
+
+
 
 
 #corpo_sobre {
