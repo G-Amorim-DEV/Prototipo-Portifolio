@@ -101,7 +101,7 @@
     font-weight: 600;
     font-style: normal;
     
-    height: 100px;
+   
     display: grid;
 
     /* ALgin (vertical) Justify (Horizontal) */
@@ -146,7 +146,7 @@ cursor: pointer;
     background: radial-gradient(var(--cor_primaria),rgb(12, 63, 12));
 }
 
-#quem_sou {
+#quem_sou.desktop {
     transition: 2s;
     
     /* background-image: url(/portifolio/midias/img/Capa.webp);
@@ -171,6 +171,37 @@ cursor: pointer;
     gap: 0px 10px;
     place-items: center;
 }
+
+#quem_sou.mobile {
+    transition: 2s;
+    
+    /* background-image: url(/portifolio/midias/img/Capa.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: certer; */
+
+    /* Plano de fundo com gradiente linear - (ângulo, cor, cor) */
+    /* background: linear-gradient(45deg, rgb(29, 158, 29), var(--cor_primaria)); */
+
+    /* Plano de fundo com gradiente radial - (cor, cor, cor, n-cor) */
+    background: radial-gradient(rgb(12, 63, 12), var(--cor_primaria));
+    /*Efeito parallax - Imagem parada na rolagem  */
+    background-attachment: fixed;
+
+
+   
+    padding: 10px;
+
+    display: none;
+
+    grid-template-columns: 1fr ;
+    gap: 0px 10px;
+
+   justify-items: start;
+
+
+}
+
 
 #informacoes_texto {
     
@@ -244,8 +275,6 @@ button{
 }
 
 
-
-
 #corpo_sobre {
     background-color: rgb(223, 214, 179);
     height: 100vh;
@@ -304,3 +333,38 @@ button{
     height: 60%;
     width: 90%;
 }
+
+
+/* Adaptações para Mobile */
+
+@media (max-width: 800px){
+    #cabecalho{
+        
+    grid-template-columns: 1fr;
+
+    }
+
+    #itens_menu ul{
+
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    #menu_principal{
+
+        place-items: center center;
+    }
+
+    #quem_sou.desktop{
+        display: none;
+    }
+
+    #quem_sou.mobile{
+        display: grid;
+    }
+
+
+}
+
