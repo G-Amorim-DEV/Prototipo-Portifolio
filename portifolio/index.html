@@ -1,155 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/portifolio.css">
-    <title>Início</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/portifolio.css">
+  <title>Início</title>
 </head>
 
 <body>
 
-    <header id="cabecalho">
+  <header id="cabecalho">
+    <div id="logo">
+      <a href="index.html">
+        <img src="media/img/Logo_Amorim_Dev.svg" alt="Logotipo Amorim-Dev desenvolvido por Guilherme Amorim" id="logotipo"> 
+      </a>
+    </div>
 
-        <div id="logo">
+    <!-- Menu Desktop -->
+    <nav id="menu_principal" class="pc">
+      <div class="itens_menu">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#curriculo">Currículo</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
 
-     
-            <img src="media/img/Logo_Amorim_Dev.svg" alt="Logotipo com o none que o  desenvolvedor Guilherme Amorim é conhecido Amorim-Dev" id="logotipo" > 
-            
+    <!-- Menu Mobile -->
+    <nav id="menu_hamburguer" class="celular">
 
+     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> <img src="media/img/hamburger.png" alt="icone do botão de menu sandwich "></button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">MENU</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+       <div class="offcanvas-body">
 
-        <nav id="menu_principal">
-            <div id="itens_menu">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#curriculo">Currículo</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+  </header>
 
-                <ul>
-                    <li>Inicio</li>
-                    <li>Sobre</li>
-                    <li>Curriculo</li>
-                    <li>Projetos</li>
-                    <li>Contato</li>
-                </ul>
+  <!-- Versão Desktop -->
+  <section id="quem_sou" class="desktop">
+    <div id="informacoes_texto">
+      <div id="titulo_informacoes">
+        <h1>Olá, <br> Eu Sou o Guilherme <br> FullStack </h1>
+      </div>
+      <div id="botao_informacoes">
+        <a href="#contato"><button> Contato </button></a>
+      </div>
 
-            </div>
-        </nav>
+      <div id="redes_sociais_informacoes">
+        <section id="social">
+          <figure class="redes_sociais">
+            <a href="https://github.com/G-Amorim-DEV" target="_blank" aria-label="GitHub">
+              <img src="media/img/icone_placa-do-github.png" alt="Ícone do GitHub">
+            </a>
+          </figure>
+          <figure class="redes_sociais">
+            <a href="#" target="_blank" aria-label="Instagram">
+              <img src="media/img/icone_instagram.png" alt="Ícone do Instagram">
+            </a>
+          </figure>
+          <figure class="redes_sociais">
+            <a href="https://linkedin.com" target="_blank" aria-label="Linkedin">
+              <img src="media/img/icone_linkedin.png" alt="Ícone do Linkedin">
+            </a>
+          </figure>
+        </section>
+      </div>
+    </div>
+
+    <div id="foto">
+      <figure>
+        <img src="media/img/capa.jpeg" width="100%" alt="Foto do Guilherme codificando" id="foto_apresentacao">
+        <figcaption hidden>Profissional FullStack</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Versão Mobile -->
+  <section id="quem_sou" class="mobile">
+    <div id="informacoes_texto">
+      <div id="titulo_informacoes">
+        <h1>Olá, <br> Eu Sou o Guilherme <br> FullStack </h1>
+      </div>
+      <div id="botao_informacoes">
+        <a href="#contato"><button> Contato </button></a>
+      </div>
+
+      <div id="redes_sociais_informacoes">
+        <section id="social">
+          <figure class="redes_sociais">
+            <a href="https://github.com/G-Amorim-DEV" target="_blank" aria-label="GitHub">
+              <img src="media/img/icone_placa-do-github.png" alt="Ícone do GitHub">
+            </a>
+          </figure>
+          <figure class="redes_sociais">
+            <a href="#" target="_blank" aria-label="Instagram">
+              <img src="media/img/icone_instagram.png" alt="Ícone do Instagram">
+            </a>
+          </figure>
+          <figure class="redes_sociais">
+            <a href="https://linkedin.com" target="_blank" aria-label="Linkedin">
+              <img src="media/img/icone_linkedin.png" alt="Ícone do Linkedin">
+            </a>
+          </figure>
+        </section>
+      </div>
+    </div>
+
+    <div id="foto">
+      <figure>
+        <img src="media/img/capa.jpeg" width="100%" alt="Foto do Guilherme codificando" id="foto_apresentacao">
+        <figcaption hidden>Profissional FullStack</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="corpo_sobre">
+    <header id="titulo_sobre">
+      <h2 id="sobre">Sobre</h2>
     </header>
 
-    <section id="quem_sou" class="desktop">
-        <div id="informacoes_texto">
-            <div id="titulo_informacoes">
-
-                <h1>Olá, <br> Eu Sou o Guilherme <br> FullStack </h1>
-
-            </div>
-            <div id="botao_informacoes">
-
-                <button> Contato </button>
-
-            </div>
-
-            <div id="redes_sociais_informacoes">
-
-                <section id="social">
-
-                    <figure id="github_informacoes" class="redes_sociais">
-                        <img src="media/img/icone_placa-do-github.png" alt="Ícone do GitHub">
-                    </figure>
-
-                    <figure id="instagram_informacoes" class="redes_sociais">
-                        <img src="media/img/icone_instagram.png" alt="ícone do Instagram">
-                    </figure>
-
-                    <figure id="linkedin_informacoes" class="redes_sociais">
-                        <img src="media/img/icone_linkedin.png" alt="Ícone do Linkedin">
-                    </figure>
-                    
-                </section>
-            </div>
-        </div>
-
-        <div id="foto">
-
-            <figure>
-                <img src="media/img/capa.jpeg" width="100%" alt="Foto do Guilherme codificando" id="foto_apresentacao">
-                <figcaption hidden>Profissional FullStack</figcaption>
-            </figure>
-
-            <!-- <audio controls>
-                <source src="midias/audio/cinematic-hip-hop-vlog-music-349853.mp3">
-                Seu navegador não possui renderizador de audio.
-            </audio>
-
-            <video src="midias/video/natureza.mp4" controls width="800px"></video> -->
-        </div>
+    <section id="secao_sobre">
+      <div id="foto_sobre">
+        <div id="imagem_sobre"></div>
+      </div>
+      <div id="descricao_sobre">
+        <div id="texto_sobre"></div>
+      </div>
     </section>
+  </section>
 
-    <section id="quem_sou" class="mobile">
-        <div id="informacoes_texto">
-            <div id="titulo_informacoes">
-
-                <h1>Olá, <br> Eu Sou o Guilherme <br> FullStack </h1>
-
-            </div>
-            <div id="botao_informacoes">
-
-                <button> Contato </button>
-
-            </div>
-
-            <div id="redes_sociais_informacoes">
-
-                <section id="social">
-
-                    <figure id="github_informacoes" class="redes_sociais">
-                        <img src="media/img/icone_placa-do-github.png" alt="Ícone do GitHub">
-                    </figure>
-
-                    <figure id="instagram_informacoes" class="redes_sociais">
-                        <img src="media/img/icone_instagram.png" alt="ícone do Instagram">
-                    </figure>
-
-                    <figure id="linkedin_informacoes" class="redes_sociais">
-                        <img src="media/img/icone_linkedin.png" alt="Ícone do Linkedin">
-                    </figure>
-                    
-                </section>
-            </div>
-        </div>
-
-        <div id="foto">
-
-            <figure>
-                <img src="media/img/capa.jpeg" width="100%" alt="Foto do Guilherme codificando" id="foto_apresentacao">
-                <figcaption hidden>Profissional FullStack</figcaption>
-            </figure>
-
-            <!-- <audio controls>
-                <source src="midias/audio/cinematic-hip-hop-vlog-music-349853.mp3">
-                Seu navegador não possui renderizador de audio.
-            </audio>
-
-            <video src="midias/video/natureza.mp4" controls width="800px"></video> -->
-        </div>
-    </section>
-
-    <section id="corpo_sobre">
-
-        <header id="titulo_sobre">
-            <div id="sobre"></div>
-        </header>
-
-        <section id="secao_sobre">
-
-            <div id="foto_sobre">
-                <div id="imagem_sobre"></div>
-            </div>
-
-            <div id="descricao_sobre">
-                <div id="texto_sobre"></div>
-            </div>
-
-        </section>
-    </section>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
